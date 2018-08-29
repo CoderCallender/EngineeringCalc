@@ -5,8 +5,16 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:EngineeringCalc"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        
-    </Grid>
+        Title="Engineering Calculator" Height="350" Width="525">
+    <StackPanel>
+        <TabControl>
+            <TabItem Header="Voltage Divider">
+                <TextBlock>
+                   Voltage Divider
+                </TextBlock>
+            </TabItem>
+
+            <TabItem Header="Battery"/>
+        </TabControl>
+    </StackPanel>
 </Window>
