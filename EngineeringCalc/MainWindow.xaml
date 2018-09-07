@@ -6,15 +6,99 @@
         xmlns:local="clr-namespace:EngineeringCalc"
         mc:Ignorable="d"
         Title="Engineering Calculator" Height="350" Width="525">
-    <StackPanel>
-        <TabControl>
+    
+        <TabControl BorderBrush="Gray" BorderThickness="0.5">
             <TabItem Header="Voltage Divider">
-                <TextBlock>
-                   Voltage Divider
-                </TextBlock>
+                <StackPanel>
+                    
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="2*" />
+                            <ColumnDefinition Width="2*" />
+                            <ColumnDefinition Width="2*"/>
+                        </Grid.ColumnDefinitions>
+                        <Label Grid.Column ="0" Content ="Voltage In" Margin="5,50,5,5"/>
+                        <TextBox Grid.Column ="1" Margin="5,50,5,5" Padding="2,2,2,0">
+                        </TextBox>
+                    </Grid>
+
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="2*" />
+                        <ColumnDefinition Width="2*" />
+                        <ColumnDefinition Width="2*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Grid.Column ="0" Content ="Resistor 1" Margin="5,10,5,5"/>
+                    <TextBox Grid.Column ="1" Margin="5,10,5,5" >
+                    </TextBox>
+                </Grid>
+
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="2*" />
+                        <ColumnDefinition Width="2*" />
+                        <ColumnDefinition Width="2*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Grid.Column ="0" Content ="Resistor 2" Margin="5,10,5,5"/>
+                    <TextBox Grid.Column ="1" Margin="5,10,5,5" >
+                    </TextBox>
+                </Grid>
+
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="2*" />
+                        <ColumnDefinition Width="2*" />
+                        <ColumnDefinition Width="2*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Grid.Column ="0" Content ="Voltage Out" Margin="5,10,5,5"/>
+                    <TextBox Grid.Column ="1" Margin="5,10,5,5" >
+                    </TextBox>
+                </Grid>
+                    
+            </StackPanel>
             </TabItem>
 
-            <TabItem Header="Battery"/>
-        </TabControl>
-    </StackPanel>
+            <TabItem Header="Battery">
+
+            <StackPanel>
+
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="2*" />
+                        <ColumnDefinition Width="2*" />
+                        <ColumnDefinition Width="2*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Grid.Column ="0" Content ="Capacity" Margin="5,50,5,5"/>
+                    <TextBox Grid.Column ="1" Margin="5,50,5,5" Padding="2,2,2,0">
+                    </TextBox>
+                </Grid>
+
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="2*" />
+                        <ColumnDefinition Width="2*" />
+                        <ColumnDefinition Width="2*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Grid.Column ="0" Content ="Current" Margin="5,10,5,5"/>
+                    <TextBox Grid.Column ="1" Margin="5,10,5,5" >
+                    </TextBox>
+                </Grid>
+
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="2*" />
+                        <ColumnDefinition Width="2*" />
+                        <ColumnDefinition Width="2*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Grid.Column ="0" Content ="Hours" Margin="5,10,5,5"/>
+                    <TextBox Grid.Column ="1" Margin="5,10,5,5" >
+                    </TextBox>
+                </Grid>
+
+  
+
+            </StackPanel>
+        </TabItem>
+    </TabControl>
+   
 </Window>
